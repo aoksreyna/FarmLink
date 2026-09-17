@@ -176,10 +176,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Copyright Bar */}
-        <div className="pt-5 border-t border-emerald-800/60 text-center text-xs text-emerald-200/60">
-          <p>© {new Date().getFullYear()} FarmLink Cambodia. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
-        </div>
 
       </div>
     </footer>

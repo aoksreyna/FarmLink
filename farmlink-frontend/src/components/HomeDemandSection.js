@@ -21,12 +21,13 @@ export default function HomeDemandSection() {
   const { openAuth, user } = useAuth();
   const [selectedDemand, setSelectedDemand] = useState(null);
 
+  //Mock data
   const featuredDemands = [
     {
       id: "DMD-5021",
       productName: "ស្ពៃបូកគោធម្មជាតិ",
       category: "បន្លែស្លឹក",
-      image: "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=400&auto=format&fit=crop&q=80",
+      image: null,
       volume: "៥០០ គ.ក / សប្តាហ៍",
       targetPrice: "$0.85 / គ.ក",
       buyerName: "ផ្សារទំនើប ឡាក់គី",
@@ -39,7 +40,7 @@ export default function HomeDemandSection() {
       id: "DMD-5022",
       productName: "ប៉េងប៉ោះឆឺរីសរីរាង្គ",
       category: "បន្លែផ្លែ",
-      image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400&auto=format&fit=crop&q=80",
+      image: null,
       volume: "២០០ គ.ក / សប្តាហ៍",
       targetPrice: "$1.80 / គ.ក",
       buyerName: "ភោជនីយដ្ឋាន ទន្លេបាសាក់",
@@ -52,7 +53,7 @@ export default function HomeDemandSection() {
       id: "DMD-5023",
       productName: "ម្ទេសដៃនាងក្រហមស្រស់",
       category: "គ្រឿងទេស",
-      image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=400&auto=format&fit=crop&q=80",
+      image: null,
       volume: "១០០ គ.ក / សប្តាហ៍",
       targetPrice: "$2.60 / គ.ក",
       buyerName: "សណ្ឋាគារ ហ្គាដិនភ្នំពេញ",
@@ -65,7 +66,7 @@ export default function HomeDemandSection() {
       id: "DMD-5024",
       productName: "ស្វាយកែវរមៀតផ្អែម",
       category: "ផ្លែឈើ",
-      image: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&auto=format&fit=crop&q=80",
+      image: null,
       volume: "១,០០០ គ.ក (១ តោន)",
       targetPrice: "$0.70 / គ.ក",
       buyerName: "រោងចក្រកែច្នៃដំណាប់ស្វាយ",

@@ -31,7 +31,7 @@ export default function BuyerProfileTab() {
   // Profile State
   const [profile, setProfile] = useState({
     companyName: userProfile?.business_name || "ភោជនីយដ្ឋាន អង្គរ (Angkor Hotel & Restaurant)",
-    contactName: userProfile?.full_name || "អ៊ុក ស្រីណា",
+    contactName: userProfile?.full_name || "អោក ស្រីណា",
     role: "ប្រធានផ្នែកលទ្ធកម្ម (Procurement Manager)",
     businessType: "ភោជនីយដ្ឋាន & បដិសណ្ឋារកិច្ច (Restaurant & Hospitality)",
     phone: userProfile?.phone || "098 474 843",
@@ -39,8 +39,8 @@ export default function BuyerProfileTab() {
     province: "រាជធានីភ្នំពេញ",
     address: "ផ្លូវលេខ 271, សង្កាត់ស្ទឹងមានជ័យ, រាជធានីភ្នំពេញ (St 271, Steung Mean Chey, Phnom Penh)",
     bio: "ភោជនីយដ្ឋាន អង្គរ គឺជាសណ្ឋាគារ និងភោជនីយដ្ឋានបម្រើសេវាកម្មម្ហូបអាហារខ្មែរ និងអន្តរជាតិ។ យើងខ្ញុំស្វែងរកការផ្គត់ផ្គង់បន្លែ ផ្លែឈើ និងសាច់ស្រស់ៗផ្ទាល់ពីកសិករខ្មែរជារៀងរាល់សប្តាហ៍ ដើម្បីធានាគុណភាពខ្ពស់ និងតម្លៃសមរម្យ។",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80",
-    cover: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&auto=format&fit=crop&q=80",
+    avatar:null,
+    cover:null,
   });
 
   // Edit form state
@@ -105,9 +105,6 @@ export default function BuyerProfileTab() {
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             ព័ត៌មានគណនី (Buyer Profile)
           </h1>
-          <p className="text-sm text-gray-500 font-medium mt-1">
-            ព័ត៌មានស្ថាប័ន អាសយដ្ឋានដឹកជញ្ជូន និងទំនាក់ទំនងអ្នកទិញ
-          </p>
         </div>
 
         {!isEditing ? (
@@ -204,7 +201,7 @@ export default function BuyerProfileTab() {
                   {profile.companyName}
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 font-semibold">
-                  អ្នកតំណាង ៖ <span className="text-gray-900">{profile.contactName}</span> • {profile.role}
+                  ឈ្មោះ​​ ៖ <span className="text-gray-900">{profile.contactName}</span> • {profile.role}
                 </p>
                 <span className="inline-block mt-2 px-3.5 py-1 rounded-lg bg-gray-100 text-gray-700 text-xs font-medium">
                   {profile.businessType}
@@ -307,7 +304,7 @@ export default function BuyerProfileTab() {
           </div>
         </div>
       ) : (
-        /* 3. Profile Edit Mode - Full Width */
+        /* 3. Profile Edit*/
         <form onSubmit={handleSave} className="w-full bg-white rounded-2xl border border-gray-200 p-6 sm:p-10 space-y-6 shadow-2xs animate-in fade-in">
           <div className="border-b border-gray-100 pb-4">
             <h2 className="text-lg font-bold text-gray-900">

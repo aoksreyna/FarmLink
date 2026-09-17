@@ -212,12 +212,6 @@ export default function FarmerOrders() {
       {/* 1. Header: Breadcrumbs & Page Title (Exact Layout Like Product Page) */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-sm text-gray-500 font-medium">
-            <span>ប្រតិបត្តិការ</span>
-            <span>&gt;</span>
-            <span className="text-gray-800 font-semibold">ការបញ្ជាទិញ</span>
-          </div>
-
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 tracking-tight">
             Order Management (គ្រប់គ្រងការបញ្ជាទិញ)
           </h1>
@@ -288,7 +282,7 @@ export default function FarmerOrders() {
             {/* Categories */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                ជំពូកកសិផល (Categories)
+                Category
               </label>
               <div className="relative">
                 <select

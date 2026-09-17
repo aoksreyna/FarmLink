@@ -202,7 +202,7 @@ export default function AddProductForm({ categories = [], onCancel, onSuccess })
             />
           </div>
           <div>
-            <label className="block text-base font-bold text-gray-800 mb-2">ជំពូកកសិផល</label>
+            <label className="block text-base font-bold text-gray-800 mb-2">Category</label>
             <select
               value={categoryId}
               onChange={(e) => setCategoryId(e.target.value)}

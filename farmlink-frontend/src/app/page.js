@@ -35,7 +35,7 @@ export default async function Home() {
   const formattedProducts = (productsData || []).map((p, idx) => {
     const primaryImg = p.product_images?.find((img) => img.is_primary) || p.product_images?.[0];
     const unitPrice = Number(p.price_per_unit || 1.0);
-    // Rotating realistic standards: GAP or Organic
+
     const standardsList = ["ស្តង់ដារ GAP", "សរីរាង្គធម្មជាតិ", "ស្តង់ដារ GAP", "ធម្មជាតិសុវត្ថិភាព"];
     const standard = standardsList[idx % standardsList.length];
 
@@ -58,7 +58,6 @@ export default async function Home() {
     };
   });
 
-  // 2. Fetch live metrics
   const [
     { count: farmersCount },
     { count: buyersCount },

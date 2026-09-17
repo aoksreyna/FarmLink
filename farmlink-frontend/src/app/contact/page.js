@@ -18,7 +18,6 @@ import {
   HelpCircle,
 } from "lucide-react";
 
-// Telegram Custom SVG Icon
 function TelegramIcon({ className = "w-5 h-5" }) {
   return (
     <svg
@@ -251,7 +250,7 @@ export default function ContactPage() {
                           required
                           value={formData.fullName}
                           onChange={handleChange}
-                          placeholder="ឧ. អ៊ុក ស្រីណា"
+                          placeholder="ឧ. អោក ស្រីណា"
                           className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs text-gray-800 placeholder-gray-400 focus:outline-hidden focus:ring-2 focus:ring-[#1B5E20]/20 focus:border-[#1B5E20] transition-all bg-white"
                         />
                       </div>

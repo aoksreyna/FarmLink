@@ -225,7 +225,7 @@ export default function BuyerDemandsTab({ onNewDemand }) {
 
             <div>
               <label className="block text-sm sm:text-base font-bold text-gray-800 mb-2">
-                ជំពូកកសិផល
+                Category
               </label>
               <select
                 disabled
@@ -410,9 +410,6 @@ export default function BuyerDemandsTab({ onNewDemand }) {
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             បញ្ជីតម្រូវការទិញ & សំណើដេញថ្លៃ (Sourcing Demands)
           </h1>
-          <p className="text-sm text-gray-500 font-medium mt-0.5">
-            គ្រប់គ្រងការប្រកាសទិញកសិផល និងប្រៀបធៀបសំណើតម្លៃដែលកសិករបានដាក់ដេញថ្លៃ
-          </p>
         </div>
 
         <button
@@ -467,7 +464,7 @@ export default function BuyerDemandsTab({ onNewDemand }) {
             {/* Category Dropdown */}
             <div>
               <label className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5">
-                ជំពូកកសិផល (Categories)
+                Category
               </label>
               <div className="relative">
                 <select

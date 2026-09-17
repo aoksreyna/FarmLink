@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
-// Realistic Sourcing Demands Database with Crop Images
+//Mock Data/Sample data
 const INITIAL_DEMANDS = [
   {
     id: "dem-1",
@@ -223,10 +223,10 @@ export default function DemandsPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col font-sans">
       
-      {/* 1. Global Navbar */}
+      {/*Navbar */}
       <Navbar />
 
-      {/* 2. Page Header with Post Demand CTA (Removed unwanted pill badge) */}
+      {/*Page Header with Post Demand CTA (Removed unwanted pill badge) */}
       <section className="bg-white border-b border-gray-200/80 pt-10 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           
@@ -274,7 +274,7 @@ export default function DemandsPage() {
         </div>
       </section>
 
-      {/* 3. Unified Search Bar & Filters */}
+      {/* Unified Search Bar & Filters */}
       <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-7 pb-2">
         <form
           onSubmit={handleSearchSubmit}
@@ -342,7 +342,7 @@ export default function DemandsPage() {
         </form>
       </section>
 
-      {/* 4. Category Pills & Demands Grid */}
+      {/* Category Pills & Demands Grid */}
       <main className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 flex-1 space-y-6">
         
         {/* Category Pills */}
@@ -422,7 +422,7 @@ export default function DemandsPage() {
 
       </main>
 
-      {/* 5. Submit Proposal Modal */}
+      {/*Submit Proposal Modal */}
       <SubmitProposalModal
         isOpen={isProposalModalOpen}
         onClose={() => setIsProposalModalOpen(false)}
@@ -440,14 +440,14 @@ export default function DemandsPage() {
         }}
       />
 
-      {/* 6. Post New Demand Modal */}
+      {/*Post New Demand Modal */}
       <PostDemandModal
         isOpen={isPostDemandModalOpen}
         onClose={() => setIsPostDemandModalOpen(false)}
         onPostSuccess={handleDemandPosted}
       />
 
-      {/* 7. Auth Modal */}
+      {/*Auth Modal */}
       <AuthModal
         isOpen={isAuthOpen}
         onClose={closeAuth}
@@ -455,7 +455,7 @@ export default function DemandsPage() {
         initialRole={initialRole}
       />
 
-      {/* 8. Global Footer */}
+      {/*Footer */}
       <Footer />
 
     </div>

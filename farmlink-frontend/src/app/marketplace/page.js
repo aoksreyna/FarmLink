@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
-// Realistic B2B Cambodian Produce Catalog
+//Mock Data / Sample data
 const INITIAL_PRODUCTS = [
   {
     id: "prod-1",
@@ -338,13 +338,13 @@ export default function MarketplacePage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col font-sans">
       
-      {/* 1. Global Navbar */}
+      {/* Navbar */}
       <Navbar
         onOpenCart={() => setIsCartDrawerOpen(true)}
         cartCount={cartItems.reduce((sum, item) => sum + 1, 0)}
       />
 
-      {/* 2. Sleek Header */}
+      {/* Header */}
       <section className="bg-white border-b border-gray-200/80 pt-10 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-2xl sm:text-4xl font-black text-gray-900 tracking-tight mb-2">
@@ -354,12 +354,12 @@ export default function MarketplacePage() {
             ប្រភពផ្គត់ផ្គង់កសិផលស្រស់សុវត្ថិភាពសម្រាប់ភោជនីយដ្ឋាន ផ្សារទំនើប និងអ្នកទិញដុំទូទាំងកម្ពុជា។
           </p>
 
-          {/* ================= ONE UNIFIED SEARCH & FILTER BAR ================= */}
+          {/*ONE UNIFIED SEARCH & FILTER BAR*/}
           <form
             onSubmit={handleSearchSubmit}
             className="bg-white border border-gray-300 rounded-2xl shadow-sm hover:border-gray-400 focus-within:border-[#1B5E20] focus-within:ring-2 focus-within:ring-[#1B5E20]/20 transition-all p-1.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-1.5"
           >
-            {/* 1. Search Input */}
+            {/* Search Input */}
             <div className="flex-1 flex items-center px-3 gap-2">
               <Search className="w-4 h-4 text-gray-400 shrink-0" />
               <input
@@ -373,7 +373,7 @@ export default function MarketplacePage() {
 
             <div className="h-6 w-px bg-gray-200 hidden sm:block"></div>
 
-            {/* 2. Province Selector */}
+            {/*Province Selector */}
             <div className="flex items-center px-2">
               <MapPin className="w-4 h-4 text-gray-400 shrink-0 mr-1.5" />
               <div className="relative">
@@ -397,7 +397,7 @@ export default function MarketplacePage() {
 
             <div className="h-6 w-px bg-gray-200 hidden sm:block"></div>
 
-            {/* 3. Sort Selector */}
+            {/*  Sort Selector */}
             <div className="flex items-center px-2">
               <ArrowUpDown className="w-3.5 h-3.5 text-gray-400 shrink-0 mr-1.5" />
               <div className="relative">
@@ -415,7 +415,7 @@ export default function MarketplacePage() {
               </div>
             </div>
 
-            {/* 4. Search Button */}
+            {/*Search Button */}
             <button
               type="submit"
               className="px-5 py-2.5 bg-[#1B5E20] hover:bg-[#154a19] text-white text-xs sm:text-sm font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors cursor-pointer shrink-0 shadow-xs"
@@ -425,6 +425,7 @@ export default function MarketplacePage() {
           </form>
 
           {/* Quick Trending Tags */}
+
           <div className="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs">
             <span className="text-gray-400 font-medium">ពេញនិយម ៖</span>
             {TRENDING_TAGS.map((tag) => (
@@ -446,7 +447,8 @@ export default function MarketplacePage() {
         </div>
       </section>
 
-      {/* 3. Main Marketplace Content */}
+      {/* 
+      Main Marketplace Content */}
       <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-7 flex-1 space-y-6">
         
         {/* Category Pills Row */}
@@ -511,7 +513,6 @@ export default function MarketplacePage() {
 
         </div>
 
-        {/* 4. Spacious Full-Width Product Cards Grid (4 Columns) */}
         {paginatedProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {paginatedProducts.map((product) => (
@@ -551,7 +552,7 @@ export default function MarketplacePage() {
           </div>
         )}
 
-        {/* 5. Pagination Controls */}
+        {/* Pagination  */}
         {totalPages > 1 && (
           <div className="flex items-center justify-center gap-2 pt-8 pb-4">
             <button
@@ -601,7 +602,7 @@ export default function MarketplacePage() {
         onAddToCart={(prod, qty) => handleAddToCart(prod, qty)}
       />
 
-      {/* 7. Slide-over Cart Drawer */}
+      {/* Slide-over Cart Drawer */}
       <CartDrawer
         isOpen={isCartDrawerOpen}
         onClose={() => setIsCartDrawerOpen(false)}
@@ -611,7 +612,7 @@ export default function MarketplacePage() {
         onClearCart={handleClearCart}
       />
 
-      {/* 8. Auth Modal */}
+      {/* Auth Modal */}
       <AuthModal
         isOpen={isAuthOpen}
         onClose={closeAuth}
@@ -619,7 +620,7 @@ export default function MarketplacePage() {
         initialRole={initialRole}
       />
 
-      {/* 9. Global Footer */}
+      {/* Footer */}
       <Footer />
 
     </div>

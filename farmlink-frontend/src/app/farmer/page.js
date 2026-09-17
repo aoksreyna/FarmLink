@@ -113,7 +113,7 @@ export default function FarmerPage() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex text-slate-800 font-sans">
-      {/* 1. Dark Green Sidebar */}
+
       <FarmerSidebar
         activeTab={activeTab}
         onSelectTab={(tab) => setActiveTab(tab)}
@@ -121,7 +121,7 @@ export default function FarmerPage() {
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
       />
 
-      {/* 2. Main Workspace */}
+
       <div className="flex-1 flex flex-col min-w-0 w-full">
         <FarmerHeader />
 

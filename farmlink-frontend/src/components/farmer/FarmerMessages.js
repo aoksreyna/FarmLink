@@ -47,8 +47,7 @@ export default function FarmerMessages() {
           id: 102,
           sender: "other",
           type: "image",
-          mediaUrl:
-            "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=600&auto=format&fit=crop&q=80",
+          mediaUrl:null,
           caption: "ស្ពៃក្តោបប្រភេទនេះបង តើមានក្នុងស្តុកទេ?",
           time: "10:29 ព្រឹក",
         },
@@ -87,7 +86,7 @@ export default function FarmerMessages() {
           id: 202,
           sender: "me",
           type: "video",
-          mediaUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+          mediaUrl: null,
           caption: "វីដេអូការប្រមូលផលប៉េងប៉ោះសរីរាង្គ",
           time: "09:05 ព្រឹក",
         },
@@ -119,8 +118,7 @@ export default function FarmerMessages() {
           id: 302,
           sender: "other",
           type: "image",
-          mediaUrl:
-            "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=80",
+          mediaUrl:null,
           caption: "ត្រូវការម្ទេសទុំក្រហមសុទ្ធបែបនេះ",
           time: "ម្សិលមិញ",
         },
@@ -240,11 +238,6 @@ export default function FarmerMessages() {
       {/* 1. Breadcrumbs & Page Title */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-sm text-gray-500 font-medium">
-            <span>ប្រតិបត្តិការ</span>
-            <span>&gt;</span>
-            <span className="text-gray-800 font-semibold">សារទំនាក់ទំនង</span>
-          </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 tracking-tight">
             ប្រអប់សារទំនាក់ទំនង
           </h1>

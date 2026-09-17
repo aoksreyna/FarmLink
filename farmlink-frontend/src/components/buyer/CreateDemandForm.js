@@ -94,7 +94,7 @@ export default function CreateDemandForm({ onCancel, onSuccess }) {
 
               <div>
                 <label className="block text-sm sm:text-base font-bold text-gray-800 mb-2">
-                  ជំពូកកសិផល
+                  Category
                 </label>
                 <select
                   value={category}

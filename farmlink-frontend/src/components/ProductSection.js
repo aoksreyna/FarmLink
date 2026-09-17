@@ -22,9 +22,6 @@ export default function ProductSection({ products = [] }) {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-[#1B5E20] text-xs font-bold mb-2">
-              <span>🌾 កសិផលស្រស់ប្រមូលផលថ្មីៗ</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
               កសិផលផ្ទាល់ពីចម្ការ & សហគមន៍ (រាយ និង បោះដុំ)
             </h2>

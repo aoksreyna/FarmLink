@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Search, RotateCcw } from "lucide-react";
 
+//Mock Data (Test and See UI only , Remove when fetch data from backend)
 export const MOCK_ADMIN_DEMANDS = [
   {
     id: "DEM-901",
@@ -152,7 +153,7 @@ export default function AdminDemandsTab() {
           <table className="w-full text-left text-sm">
             <thead className="bg-[#144717] text-white font-semibold">
               <tr>
-                <th className="py-3.5 px-4">កូដសម្គាល់</th>
+                <th className="py-3.5 px-4">កូដ</th>
                 <th className="py-3.5 px-4">កសិផលដែលត្រូវការ</th>
                 <th className="py-3.5 px-4">សហគ្រាសអ្នកទិញ</th>
                 <th className="py-3.5 px-4">បរិមាណ & តម្លៃគោលដៅ</th>

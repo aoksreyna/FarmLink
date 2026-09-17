@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { PlusCircle, Clock, Users, ArrowRight, Check } from "lucide-react";
 
+//Mock Data (Test and See UI only , Remove when fetch data from backend)
 export const MOCK_BUYER_DEMANDS = [
   {
     id: "MY-DEM-1",

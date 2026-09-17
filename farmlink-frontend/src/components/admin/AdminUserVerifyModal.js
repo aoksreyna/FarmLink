@@ -44,14 +44,10 @@ export default function AdminUserVerifyModal({
   );
 
   const farmGallery = [
-    user.farmPhoto1 ||
-      "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&auto=format&fit=crop&q=80",
-    user.farmPhoto2 ||
-      "https://images.unsplash.com/photo-1553279768-865429fa0078?w=600&auto=format&fit=crop&q=80",
-    user.farmPhoto3 ||
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&auto=format&fit=crop&q=80",
-    user.coverPhoto ||
-      "https://images.unsplash.com/photo-1589923188900-85dae523342b?w=600&auto=format&fit=crop&q=80",
+    user.farmPhoto1 ?? null,
+    user.farmPhoto2 ?? null,
+    user.farmPhoto3 ?? null,
+    user.coverPhoto ?? null,
   ];
 
   return (
@@ -75,8 +71,7 @@ export default function AdminUserVerifyModal({
           <div className="relative h-48 sm:h-64 w-full bg-gray-100 overflow-hidden">
             <img
               src={
-                user.coverPhoto ||
-                "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200&auto=format&fit=crop&q=80"
+                user.coverPhoto
               }
               alt="Farm Cover"
               className="w-full h-full object-cover"
@@ -97,8 +92,7 @@ export default function AdminUserVerifyModal({
               <div className="relative">
                 <img
                   src={
-                    user.avatar ||
-                    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80"
+                    user.avatar 
                   }
                   alt={user.name}
                   className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover border-4 border-white shadow-lg bg-white"

@@ -19,23 +19,19 @@ export default function AdminPortalPage() {
       case "users":
         return {
           title: "គ្រប់គ្រងអ្នកប្រើប្រាស់",
-          subtitle: "បញ្ជីកសិករ និងអ្នកទិញបោះដុំ",
         };
       case "products":
         return {
           title: "ពិនិត្យ & អនុម័តកសិផល",
-          subtitle: "ត្រួតពិនិត្យគុណភាព និងអនុម័តកសិផលមុនពេលផ្សព្វផ្សាយលើផ្សារ",
         };
       case "demands":
         return {
           title: "តម្រូវការទិញ & ដេញថ្លៃ",
-          subtitle: "ត្រួតពិនិត្យការប្រកាសទិញ និងតាមដានការដេញថ្លៃ",
         };
       case "dashboard":
       default:
         return {
-          title: "ផ្ទាំងគ្រប់គ្រងរដ្ឋបាល",
-          subtitle: "ទិដ្ឋភាពទូទៅនៃប្រតិបត្តិការវេទិកា FarmLink",
+          title: "ផ្ទាំងគ្រប់គ្រងទូទៅ",
         };
     }
   };

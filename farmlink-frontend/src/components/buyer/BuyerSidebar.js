@@ -241,13 +241,6 @@ export default function BuyerSidebar({
             </button>
           </div>
         </nav>
-
-        {/* Footer info in sidebar */}
-        {!isCollapsed && (
-          <div className="p-4 border-t border-[#1b5e20] text-[11px] text-emerald-300/80">
-            <span>ជំនួយការទិញ ៖ 012 345 678</span>
-          </div>
-        )}
       </div>
     </aside>
   );

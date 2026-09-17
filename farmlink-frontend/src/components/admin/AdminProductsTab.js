@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import AdminProductConfirmModal from "@/components/admin/AdminProductConfirmModal";
 
+//Mock data
 export const MOCK_ADMIN_PRODUCTS = [
   {
     id: "PROD-001",
@@ -37,12 +38,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "098 474 843",
     description:
       "ប៉េងប៉ោះស្រស់ធម្មជាតិប្រមូលផលរៀងរាល់ព្រឹកពីផ្ទះសំណាញ់ទំនើប គ្មានជាតិគីមី រសជាតិជូរអែមឆ្ងាញ់ សមស្របសម្រាប់ភោជនីយដ្ឋាន និងអ្នកទិញដុំ។",
-    image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1561136594-7f68413baa99?w=800&auto=format&fit=crop&q=80",
-    ],
+    image: null,
+    images: [null, null, null],
     submittedDate: "12 កញ្ញា 2026",
   },
   {
@@ -62,14 +59,9 @@ export const MOCK_ADMIN_PRODUCTS = [
     rating: 4.9,
     reviewsCount: 45,
     phone: "088 765 4321",
-    description:
-      "ស្វាយកែវរមៀតកម្រិតលេខ១ សាច់ក្រាស់ គ្រាប់ស្តើង គ្មានជាតិគីមី វេចខ្ចប់តាមស្តង់ដារនាំចេញ CamGAP ធានាគុណភាពស្រស់ល្អ និងទម្ងន់ត្រឹមត្រូវ។",
-    image: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1553279768-865429fa0078?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1605027990121-cbae9e0642df?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1596463059283-da257325bee8?w=800&auto=format&fit=crop&q=80",
-    ],
+    description:"",
+    image: null,
+    images: [null, null, null],
     submittedDate: "15 កញ្ញា 2026",
   },
   {
@@ -91,12 +83,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "088 765 4321",
     description:
       "ក្រូចពោធិ៍សាត់ដាំលើដីធម្មជាតិខេត្តបាត់ដំបង ទឹកច្រើន រសជាតិផ្អែមមុត គ្មានប្រើសារធាតុរក្សាទុកយូរ ប្រមូលផលស្រស់ៗពីដើម។",
-    image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=800&auto=format&fit=crop&q=80",
-    ],
+     image: null,
+    images: [null, null, null],
     submittedDate: "15 កញ្ញា 2026",
   },
   {
@@ -118,12 +106,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "088 765 4321",
     description:
       "មៀនប៉ៃលិនសាច់ក្រាស់ គ្រាប់តូច ផ្អែមស្រួយធម្មជាតិ ប្រមូលផលថ្មីៗពីចម្ការ វេចខ្ចប់កេសស្តង់ដារ ដឹកជញ្ជូនរហ័សដល់ភ្នំពេញ។",
-    image: "https://images.unsplash.com/photo-1596463059283-da257325bee8?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1596463059283-da257325bee8?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=800&auto=format&fit=crop&q=80",
-    ],
+    image: null,
+    images: [null, null, null],
     submittedDate: "14 កញ្ញា 2026",
   },
   {
@@ -145,12 +129,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "017 889 900",
     description:
       "អង្ករផ្ការំដួលបាត់ដំបងលេខ១ សុទ្ធ១០០% គ្រាប់វែង ក្រអូបឈ្ងុយពេលដាំ បាយទន់ឆ្ងាញ់ មានស្តុកច្រើនសម្រាប់ការផ្គត់ផ្គង់ប្រចាំខែជូនដេប៉ូ និងភោជនីយដ្ឋាន។",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
-    ],
+     image: null,
+    images: [null, null, null],
     submittedDate: "10 កញ្ញា 2026",
   },
   {
@@ -172,12 +152,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "017 889 900",
     description:
       "អង្ករសែនក្រអូបប្រណីត កិនថ្មីៗ គ្មានក្លិនផ្អួរ សម្បូរជីវជាតិ សមស្របសម្រាប់គ្រួសារ ភោជនីយដ្ឋាន និងសហគ្រាសផ្តល់សេវាម្ហូបអាហារ។",
-    image: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&auto=format&fit=crop&q=80",
-    ],
+    image: null,
+    images: [null, null, null],
     submittedDate: "15 កញ្ញា 2026",
   },
   {
@@ -199,12 +175,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "010 445 566",
     description:
       "ម្ទេសហាវៃក្រហម លឿង បៃតង ដាំក្នុងផ្ទះសំណាញ់ទំនើប សាច់ក្រាស់ ស្រួយឆ្ងាញ់ គ្មានជាតិថ្នាំពុល ស្រោចស្រពតាមប្រព័ន្ធស្វ័យប្រវត្ត។",
-    image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526346698789-224a79ed0080?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
-    ],
+     image: null,
+    images: [null, null, null],
     submittedDate: "14 កញ្ញា 2026",
   },
   {
@@ -226,12 +198,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "010 445 566",
     description:
       "ស្ពៃក្តោបដាំលើដីធម្មជាតិ ស្លឹកណែនល្អ គ្មានដង្កូវ គ្មានជាតិគីមី ធានាសុវត្ថិភាពម្ហូបអាហារកម្រិតខ្ពស់ និងរក្សាទុកបានយូរ។",
-    image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
-    ],
+     image: null,
+    images: [null, null, null],
     submittedDate: "14 កញ្ញា 2026",
   },
   {
@@ -253,11 +221,8 @@ export const MOCK_ADMIN_PRODUCTS = [
     phone: "012 334 455",
     description:
       "ដំឡូងមីស្ងួតកែច្នៃតាមស្តង់ដារ ជាតិសំណើមទាប គ្មានផ្សិត សមស្របសម្រាប់រោងចក្រផលិតចំណីសត្វ និងការកែច្នៃម្សៅមី។",
-    image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&auto=format&fit=crop&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
-    ],
+     image: null,
+    images: [null, null, null],
     submittedDate: "08 កញ្ញា 2026",
   },
 ];

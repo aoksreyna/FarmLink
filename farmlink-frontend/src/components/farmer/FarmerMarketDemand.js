@@ -154,7 +154,7 @@ export default function FarmerMarketDemand() {
     const headers = [
       "លេខកូដ",
       "កសិផលដែលត្រូវការ",
-      "ជំពូក",
+      "Category",
       "បរិមាណ",
       "តម្លៃគោលដៅ",
       "អ្នកទិញ",
@@ -209,11 +209,6 @@ export default function FarmerMarketDemand() {
       {/* 1. Breadcrumbs & Page Title */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-sm text-gray-500 font-medium">
-            <span>ប្រតិបត្តិការ</span>
-            <span>&gt;</span>
-            <span className="text-gray-800 font-semibold">តម្រូវការទីផ្សារ</span>
-          </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 tracking-tight">
             តម្រូវការទីផ្សារពីអ្នកទិញ
           </h1>
@@ -280,7 +275,7 @@ export default function FarmerMarketDemand() {
 
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                ជំពូកកសិផល
+                Category
               </label>
               <div className="relative">
                 <select

@@ -282,9 +282,6 @@ export default function BuyerRecentOrders({
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             My requests (សំណើបញ្ជាទិញ)
           </h1>
-          <p className="text-sm text-gray-500 font-medium mt-0.5">
-            តាមដានស្ថានភាពសំណើកុម្ម៉ង់ទិញកសិផលបោះដុំរបស់អ្នកទៅកាន់កសិករ
-          </p>
         </div>
 
         {isEmbedded && onViewAll ? (
@@ -357,7 +354,7 @@ export default function BuyerRecentOrders({
             {/* Categories */}
             <div>
               <label className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5">
-                ជំពូកកសិផល (Categories)
+                Category
               </label>
               <div className="relative">
                 <select

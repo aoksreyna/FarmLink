@@ -126,7 +126,7 @@ export default function ProductList({
     const headers = [
       "Product ID",
       "ឈ្មោះកសិផល",
-      "ជំពូក",
+      "Category",
       "តម្លៃ ($)",
       "ស្តុក",
       "ស្ថានភាព",
@@ -154,12 +154,6 @@ export default function ProductList({
       {/* 1. Header: Breadcrumbs & Page Title on Left, Add Product Button on Right */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 font-medium">
-            <span>គ្រប់គ្រងកសិផល</span>
-            <span>&gt;</span>
-            <span className="text-gray-800 font-semibold">បញ្ជីកសិផល</span>
-          </div>
-
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 tracking-tight">
             បញ្ជីកសិផលដាក់លក់នៅលើទីផ្សារ
           </h1>
@@ -220,10 +214,10 @@ export default function ProductList({
 
           {/* 3 Dropdown Filters in 1 Row */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {/* Filter 1: ជំពូកកសិផល */}
+            {/* Filter 1: Category */}
             <div>
               <label className="block text-xs font-semibold text-gray-600 mb-1.5">
-                ជំពូកកសិផល
+                Category
               </label>
               <div className="relative">
                 <select
@@ -312,7 +306,7 @@ export default function ProductList({
                 <th className="py-3.5 px-5">Product ID</th>
                 <th className="py-3.5 px-4">រូបភាព</th>
                 <th className="py-3.5 px-5">ឈ្មោះកសិផល</th>
-                <th className="py-3.5 px-5">ជំពូក</th>
+                <th className="py-3.5 px-5">Category</th>
                 <th className="py-3.5 px-5">តម្លៃរាយ ($)</th>
                 <th className="py-3.5 px-5">បរិមាណក្នុងស្តុក</th>
                 <th className="py-3.5 px-5">ស្ថានភាព</th>

@@ -3,26 +3,24 @@
 import React from "react";
 import { Search, Bell, ShieldCheck, CheckCircle2 } from "lucide-react";
 
-export default function AdminHeader({ title = "ផ្ទាំងគ្រប់គ្រងទូទៅ", subtitle = "ប្រព័ន្ធគ្រប់គ្រងវេទិកា FarmLink B2B" }) {
+export default function AdminHeader({ title = "ផ្ទាំងគ្រប់គ្រងទូទៅ", subtitle }) {
   return (
     <header className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-gray-200 px-6 py-4 flex items-center justify-between gap-4">
-      {/* Page Title / Breadcrumb */}
+      {/* Page Title */}
       <div>
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
           {title}
         </h1>
-        <p className="text-xs text-gray-500 font-medium mt-0.5">
-          {subtitle}
-        </p>
+        {subtitle && (
+          <p className="text-xs text-gray-500 font-medium mt-0.5">
+            {subtitle}
+          </p>
+        )}
       </div>
 
       {/* Right Controls: Search, System Status, Admin Profile */}
       <div className="flex items-center gap-3 sm:gap-4">
-        {/* System Health Badge */}
-        <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-[#1B5E20]">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span>System Online (Supabase Live)</span>
-        </div>
+
 
         {/* Notifications Icon */}
         <div className="relative">

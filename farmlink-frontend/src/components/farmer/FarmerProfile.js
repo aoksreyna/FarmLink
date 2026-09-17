@@ -47,10 +47,8 @@ export default function FarmerProfile() {
     successfulOrders: 124,
     responseRate: "៩៨%",
     responseTime: "១៥ នាទី",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
-    cover:
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200&auto=format&fit=crop&q=80",
+    avatar: null,
+    cover: null,
     bio: "កសិដ្ឋានបៃតងធម្មជាតិ មានឯកទេសដាំដុះបន្លែស្លឹក និងបន្លែយកផ្លែតាមស្តង់ដារធម្មជាតិ GAP មិនប្រើប្រាស់គីមីពុល។ យើងខ្ញុំផ្តោតលើសុវត្ថិភាពម្ហូបអាហារ និងការផ្គត់ផ្គង់បន្លែស្រស់ៗប្រចាំថ្ងៃជូនផ្សារទំនើប ភោជនីយដ្ឋាន និងសណ្ឋាគារលំដាប់ខ្ពស់នៅរាជធានីភ្នំពេញ។",
     certifications: [
       "ស្តង់ដារការអនុវត្តកសិកម្មល្អកម្ពុជា (CamGAP)",
@@ -58,11 +56,6 @@ export default function FarmerProfile() {
       "វិញ្ញាបនបត្រអនាម័យ និងភូតគាមអនាម័យ (SPS)",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&auto=format&fit=crop&q=80",
     ],
     reviews: [
       {
@@ -149,11 +142,6 @@ export default function FarmerProfile() {
       {/* 1. Breadcrumbs & Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-sm text-gray-500 font-medium">
-            <span>គណនី</span>
-            <span>&gt;</span>
-            <span className="text-gray-800 font-semibold">ព័ត៌មានគណនីកសិករ</span>
-          </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 tracking-tight">
             កម្រងព័ត៌មានកសិដ្ឋាន (Farm Profile)
           </h1>

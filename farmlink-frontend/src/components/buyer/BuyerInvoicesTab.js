@@ -326,11 +326,6 @@ export default function BuyerInvoicesTab() {
               <ArrowLeft className="w-6 h-6" />
             </button>
             <div>
-              <div className="flex items-center gap-2 text-xs text-gray-500">
-                <span>វិក្កយបត្រ</span>
-                <span>&gt;</span>
-                <span className="text-gray-800 font-bold">{selectedFarm.name}</span>
-              </div>
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight mt-0.5">
                 វិក្កយបត្រពី {selectedFarm.name}
               </h1>

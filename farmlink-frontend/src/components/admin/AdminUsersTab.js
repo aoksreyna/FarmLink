@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import AdminUserVerifyModal from "@/components/admin/AdminUserVerifyModal";
 
+//Mock data
 export const MOCK_ADMIN_USERS = [
   {
     id: "USR-001",
@@ -67,11 +68,11 @@ export const MOCK_ADMIN_USERS = [
     totalOrders: 18,
     cropTypes: "បន្លែសុវត្ថិភាព, ស្ពៃក្តោប & ត្រសក់ផ្អែម",
     bio: "សហគមន៍កសិកម្មប្រមូលផ្តុំកសិករដាំបន្លែសុវត្ថិភាពជាច្រើនគ្រួសារ ដោយមានកិច្ចសន្យាផ្គត់ផ្គង់បន្លែស្រស់ជារៀងរាល់ថ្ងៃជូនផ្សារទំនើប និងដេប៉ូបោះដុំ។",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1589923188900-85dae523342b?w=1000&auto=format&fit=crop&q=80",
-    farmPhoto1: "https://images.unsplash.com/photo-1589923188900-85dae523342b?w=600&auto=format&fit=crop&q=80",
-    farmPhoto2: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=80",
-    farmPhoto3: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=600&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto: null  ,
+    farmPhoto1: null,
+    farmPhoto2: null,
+    farmPhoto3: null,
     joinedDate: "05 កញ្ញា 2026",
   },
   {
@@ -94,11 +95,11 @@ export const MOCK_ADMIN_USERS = [
     totalOrders: 26,
     cropTypes: "ប៉េងប៉ោះធម្មជាតិ & ម្ទេសហាវៃស្រស់",
     bio: "ចម្ការតារាផ្តោតលើការដាំប៉េងប៉ោះក្នុងផ្ទះសំណាញ់ទំនើប និងម្ទេសហាវៃចម្រុះពណ៌ មានស្តង់ដារអនាម័យខ្ពស់ និងស្រោចស្រពតាមប្រព័ន្ធដំណក់ទឹក។",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=1000&auto=format&fit=crop&q=80",
-    farmPhoto1: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&auto=format&fit=crop&q=80",
-    farmPhoto2: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=600&auto=format&fit=crop&q=80",
-    farmPhoto3: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto: null,
+    farmPhoto1: null,
+    farmPhoto2: null,
+    farmPhoto3: null,
     joinedDate: "20 កុម្ភៈ 2026",
   },
   {
@@ -120,8 +121,8 @@ export const MOCK_ADMIN_USERS = [
     certType: "អាជីវកម្មផ្ទៀងផ្ទាត់រួច",
     totalOrders: 64,
     bio: "ផ្សារទំនើបឈានមុខគេនៅកម្ពុជា ស្វែងរកការផ្គត់ផ្គង់បន្លែ ផ្លែឈើ និងអង្ករមានវិញ្ញាបនបត្រ CamGAP ពីកសិករក្នុងស្រុកជាប្រចាំ។",
-    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1000&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto:null,
     joinedDate: "10 មករា 2026",
   },
   {
@@ -143,8 +144,8 @@ export const MOCK_ADMIN_USERS = [
     certType: "អាជីវកម្មផ្ទៀងផ្ទាត់រួច",
     totalOrders: 12,
     bio: "ភោជនីយដ្ឋានម្ហូបខ្មែរទំនើប ត្រូវការបន្លែស្រស់ ត្រសក់ ប៉េងប៉ោះ និងអង្ករផ្ការំដួលកម្រិត១ ពីកសិករផ្ទាល់។",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto:null,
     joinedDate: "01 សីហា 2026",
   },
   {
@@ -166,8 +167,8 @@ export const MOCK_ADMIN_USERS = [
     certType: "កំពុងរង់ចាំពិនិត្យ",
     totalOrders: 5,
     bio: "រោងចក្រកែច្នៃស្វាយកែវរមៀតដំណាប់ និងផ្លែឈើស្ងួតសម្រាប់នាំចេញ ត្រូវការប្រមូលទិញស្វាយរាប់រយតោនក្នុងរដូវប្រមូលផល។",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto: null,
     joinedDate: "10 កញ្ញា 2026",
   },
   {
@@ -189,8 +190,8 @@ export const MOCK_ADMIN_USERS = [
     certType: "ផ្ទៀងផ្ទាត់រួច (Verified)",
     totalOrders: 31,
     bio: "ដេប៉ូបោះដុំបន្លែធំនៅផ្សារដើមគ ប្រមូលទិញបន្លែគ្រប់មុខពីកសិករខេត្តបាត់ដំបង កណ្តាល និងកំពង់ស្ពឺ។",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80",
-    coverPhoto: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1000&auto=format&fit=crop&q=80",
+    avatar: null,
+    coverPhoto: null,
     joinedDate: "14 មីនា 2026",
   },
 ];
@@ -272,9 +273,6 @@ export default function AdminUsersTab() {
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
             គ្រប់គ្រងអ្នកប្រើប្រាស់
           </h2>
-          <p className="text-sm text-slate-600 mt-1">
-            ផ្ទៀងផ្ទាត់កសិករ និងអ្នកទិញបោះដុំតាមខេត្ត
-          </p>
         </div>
 
         {/* Tab Filters */}

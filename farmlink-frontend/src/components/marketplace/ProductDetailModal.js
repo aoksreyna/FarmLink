@@ -23,7 +23,7 @@ export default function ProductDetailModal({
   const [isLiked, setIsLiked] = useState(false);
   const [isSuccessOrder, setIsSuccessOrder] = useState(false);
 
-  // Real-time reviews state
+  // Mock data
   const [reviews, setReviews] = useState([
     {
       id: "r-1",
@@ -34,7 +34,7 @@ export default function ProductDetailModal({
       verified: true,
       qtyBought: "50 គ.ក",
       comment: "Good service , tomato is delicous and fresh",
-      image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=200&auto=format&fit=crop&q=80",
+      image: null,
     },
     {
       id: "r-2",
@@ -45,7 +45,7 @@ export default function ProductDetailModal({
       verified: true,
       qtyBought: "100 គ.ក",
       comment: "Good service , tomato is delicous and fresh",
-      image: "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=200&auto=format&fit=crop&q=80",
+      image: null,
     },
     {
       id: "r-3",
@@ -56,7 +56,7 @@ export default function ProductDetailModal({
       verified: true,
       qtyBought: "30 គ.ក",
       comment: "កសិផលស្រស់ល្អ ដឹកជញ្ជូនរហ័សទាន់ចិត្ត វេចខ្ចប់យ៉ាងមានស្តង់ដារ។",
-      image: "https://images.unsplash.com/photo-1546470427-0d4db154ceb7?w=200&auto=format&fit=crop&q=80",
+      image:null,
     },
     {
       id: "r-4",

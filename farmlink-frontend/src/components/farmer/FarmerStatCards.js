@@ -42,7 +42,7 @@ export default function FarmerStatCards({
             className="bg-white rounded-xl border border-gray-200 p-5 flex items-center justify-between"
           >
             <div>
-              <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <p className="text-[15px] font-medium text-gray-500">
                 {card.label}
               </p>
               <p className="text-2xl font-bold text-gray-900 mt-1">

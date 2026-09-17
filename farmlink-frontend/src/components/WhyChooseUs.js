@@ -26,9 +26,6 @@ export default function WhyChooseUs() {
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100/70 text-[#1B5E20] text-xs font-bold mb-3">
-            <span>✨ គុណតម្លៃស្នូលរបស់យើង</span>
-          </div>
           <h2 className="text-2xl sm:text-4xl font-black text-gray-900 tracking-tight">
             ហេតុអ្វីគួរជ្រើសរើស FarmLink?
           </h2>
